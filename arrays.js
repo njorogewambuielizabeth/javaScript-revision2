@@ -29,8 +29,7 @@ function mostCommonChar(string) {
     return arr.sort((a,b) =>b -a);
   }
  let nums = [12,54,2,5,67,89,10,23];
- let sortedArray =sorted(nums);
- console.log(nums);
+console.log(sorted(nums));
   
  //3. Write a function that takes an array of strings and
  // returns a new array that contains the same strings, sorted alphabetically.
@@ -152,7 +151,41 @@ function capitalizeWithoutSmallWords(str) {
 }
 let sentence = "i enjoy reading novels,watching movies and eating";
 let final = capitalizeWithoutSmallWords(sentence);
-console.log(final); 
+console.log(final);
+
+// Write a program that takes an array of numbers 
+//and returns the sum of all the numbers in the array.
+function sumOf(array) {
+  let sum =0;
+  for (let i = 0; i < array.length; i++) {
+     sum += array [i];
+    
+  }
+  return sum
+}
+let numbs =[1,2,3,4,5,6,7];
+console.log(sumOf(numbs));
+
+// Write a program that takes an array of strings and
+// returns a new array with all the strings capitalized.
+function capitalizeArray(arr) {
+  const capitalizedArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    const capitalizedString = arr[i].toUpperCase();
+    capitalizedArray.push(capitalizedString);
+  }
+  return capitalizedArray;
+}
+let words=["mama","van","boy","sister","love"];
+console.log(capitalizeArray(words));
+
+function findLargestNumber(numbers) {
+  numbers.sort((a, b) => b -a);
+  return numbers[0];
+}
+const number = [10, 20, 30, 40, 50];
+// const largestNumber = findLargestNumber(numbers);
+console.log(findLargestNumber(number)); // Output: 50
 
 
 
